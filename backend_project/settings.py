@@ -15,7 +15,10 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-GOOGLE_CLIENT_SECRET_FILE = os.getenv("GOOGLE_CREDENTIALS_PATH", os.path.expanduser("~/secret/client_secret.json"))
+
+
+GOOGLE_CLIENT_SECRET_FILE = os.getenv("GOOGLE_CREDENTIALS_PATH", "/Users/mihirmistry/secrets/client_secret.json")
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -26,7 +29,8 @@ SECRET_KEY = 'django-insecure-ulji4@ib7*798=-fea=on)uuz92r_h31s+eix8@q*l0!-h8#i5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+
 
 
 # Application definition
